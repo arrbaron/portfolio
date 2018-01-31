@@ -19,12 +19,8 @@ nav {
   width: 100%;
 }
 
-nav ul {
+nav.ui.inverted.segment {
   margin-top: 0;
-}
-
-nav li {
-  display: inline-block;
 }
 
 .logo-list li {
