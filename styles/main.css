@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans";
   text-align: center;
@@ -42,6 +46,7 @@ nav li {
 
 .project__image {
   border: 3px solid black;
+  max-width: 300px;
 }
 
 footer p {
