@@ -1,0 +1,49 @@
+body {
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+main {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  background-color: grey;
+  text-align: right;
+  width: 100%;
+}
+
+nav ul {
+  margin-top: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.logo-list li {
+  display: inline-block;
+}
+
+.logo-list img {
+  width: 75%;
+  height: 75%;
+}
+
+.project:nth-of-type(2n+1) {
+  background-color: grey;
+}
+
+.project:nth-of-type(2n), footer {
+  background-color: lightgrey;
+}
+
+.project__image {
+  border: 3px solid black;
+}
+
+footer p {
+  margin-bottom: 0;
+}
