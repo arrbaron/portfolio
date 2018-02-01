@@ -1,5 +1,6 @@
 const Nav = {
   listenersStarted: false,
+  scrollSpeed: 500,
 
   reset: function() {
     if (!this.listenersStarted) {
@@ -11,19 +12,19 @@ const Nav = {
     $(".link--projects").click(() => {
       $('html, body').animate({
         scrollTop: ($(".projects").offset().top)
-      }, 200);
+      }, this.scrollSpeed);
     });
 
     $(".link--about").click(() => {
       $('html, body').animate({
         scrollTop: ($(".about").offset().top)
-      }, 200);
+      }, this.scrollSpeed);
     });
 
     $(".link--contact").click(() => {
       $('html, body').animate({
         scrollTop: ($(".contact").offset().top)
-      }, 200);
+      }, this.scrollSpeed);
     });
   }
 };
