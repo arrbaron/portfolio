@@ -7,6 +7,7 @@ const Carousel = {
     this.activeProject = 0;
     if (!this.listenersStarted) {
       this.startListeners();
+      console.log("Nothing to see here.");
     }
   },
 
