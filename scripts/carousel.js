@@ -35,17 +35,17 @@ const Carousel = {
       nextProject > this.activeProject ? direction = "left" : direction = "right";
     }
 
-    // $(this.projects[this.activeProject])
-    //   .transition(`fly ${direction}`, () => {
-    //     $(this.projects[nextProject])
-    //       .transition(`fly ${direction}`);
-    // });
-
     $(this.projects[this.activeProject])
-      .transition(`fade`, () => {
+      .transition(`fly ${direction}`, () => {
         $(this.projects[nextProject])
-          .transition(`fade`);
-      });
+          .transition(`fly ${direction}`);
+    });
+
+    // $(this.projects[this.activeProject])
+    //   .transition(`fade`, () => {
+    //     $(this.projects[nextProject])
+    //       .transition(`fade`);
+    //   });
 
     // $(this.projects[this.activeProject] + " img")
     //   .transition(`fly ${direction}`, () => {
