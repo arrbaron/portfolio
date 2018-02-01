@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="The portfolio of Roy Baron">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="./styles/main.css">
   <title>Roy Baron</title>
@@ -12,103 +13,142 @@
 <body>
   <nav class="ui inverted segment" role="navigation">
     <div class="ui inverted secondary menu">
-      <a class="item">Projects</a>
-      <a class="item">About</a>
-      <a class="item">Contact</a>
-      <a class="item">IFAQ</a>
+      <a class="link--projects item">Projects</a>
+      <a class="link--about item">About</a>
+      <a class="link--contact item">Contact</a>
     </div>
   </nav>
   <header class="ui container" role="banner">
     <h1 class="ui header">Hello there! I'm a frontend developer named Roy. This is my portfolio. Let me show you around.</h1>
-    <img class="ui fluid bordered image" src="./images/me/elephant.png">
-    <aside>
-      <p class="ui label">This is me and an elephant (the elephant is a metaphor for coding).</p>
-      <p></p>
-    </aside>
+    <section>
+      <img class="ui fluid bordered image" src="./images/me/elephant.png">
+      <aside>
+        <p class="ui label">This is me and an elephant (the elephant is a metaphor for coding).</p>
+      </aside>
+    </section>
   </header>
   <main role="main">
     <section class="ui container projects">
-      <p>Here are some</p>
-      <h2 class="ui header">Projects I Made</h2>
-      <p>Out of code and magic (but mostly code)</p>
-      <article class="project">
-        <h3>Hangmanateach</h3>
+      <span>Here are some of my</span>
+      <h2 class="ui header">Projects</h2>
+      <article class="project hangmanateach">
+        <i class="angle left icon large"></i>
         <img class="project__image" src="./images/projects/hangmanateach.png">
+        <i class="angle right icon large"></i>
+        <h3 class="ui header">Hangmanateach</h3>
+        <div class="logo-list">
+          <i class="fab fa-react"></i>
+          <img src="./images/logos/redux.png">
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+        </div>
         <p>
           Hangmanateach is a vocab studying tool for both learners and educators. Create your own study sets, test spelling in a fun
           and familiar format, and get quizzed on meaning. Also, manatees!
         </p>
-        <ul class="logo-list">
-          <li><img src="./images/logos/react.png"></li>
-          <li><img src="./images/logos/redux.png"></li>
-          <li><img src="./images/logos/html5.png"></li>
-          <li><img src="./images/logos/css.png"></li>
-          <li><img src="./images/logos/javascript.png"></li>
-        </ul>
-        <ul class="logo-list">
-          <li><img src="./images/logos/node.png"></li>
-          <li><img src="./images/logos/mongodb.png"></li>
-          <li><img src="./images/logos/passport.png"></li>
-          <li><img src="./images/logos/jsonwebtoken.png"></li>
-        </ul>
+         <div class="project__links">
+          <a href="https://hangmanatee.netlify.com/" target="_blank">
+            <button class="ui button primary">
+              <i class="play icon"></i>
+              Live
+            </button>
+          </a>
+          <a href="https://github.com/soundofsilence75/hangmanatee-client" target="_blank">
+            <button class="ui button icon">
+              <i class="fab fa-github"></i>
+              Source
+            </button>
+          </a>
+        </div>
       </article>
-      <article class="project">
-        <h3>Fridge Poetry</h3>
+      <article class="project fridge-poetry hidden">
+        <i class="angle left icon large"></i>
         <img class="project__image" src="./images/projects/fridge-poetry.png">
-        <p>
-           Fridge Poetry lets users build poems together with strangers on the internet. With magnets!
-        </p>
-        <ul class="logo-list">
-          <li><img src="./images/logos/jquery.png"></li>
-          <li><img src="./images/logos/jquery-ui.jpg"></li>
-          <li><img src="./images/logos/javascript.png"></li>
-          <li><img src="./images/logos/html5.png"></li>
-          <li><img src="./images/logos/css.png"></li>
-        </ul>
-        <ul class="logo-list">
-          <li><img src="./images/logos/node.png"></li>
-          <li><img src="./images/logos/mongodb.png"></li>
-          <li><img src="./images/logos/passport.png"></li>
-          <li><img src="./images/logos/jsonwebtoken.png"></li>
-        </ul>
+        <i class="angle right icon large"></i>
+        <h3 class="ui header">Fridge Poetry</h3>
+        <div class="logo-list">
+          <i class="fab fa-node-js"></i>
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <p>Fridge Poetry lets users build poems together with strangers on the internet. With magnets!</p>
+          <div class="project__links">
+            <a href="https://nameless-plateau-59215.herokuapp.com/" target="_blank">
+              <button class="ui button primary">
+                <i class="play icon"></i>
+                Live
+               </button>
+            </a>
+            <a href="https://github.com/soundofsilence75/fridge-poetry" target="_blank">
+              <button class="ui button icon">
+                <i class="fab fa-github"></i>
+                Source
+              </button>
+            </a>
+          </div>
       </article>
-      <article class="project">
-        <h3>Weather to Game</h3>
+      <article class="project weather-to-game hidden">
+        <i class="angle left icon large"></i>
         <img class="project__image" src="./images/projects/weather-to-game.png">
-        <p>
-           Weather to Game pulls from two separate APIs to let you know whether the weather is right for playing a board game. Afterwards,
-            it's even kind enough to suggest a game for you to play!
-        </p>
-        <ul class="logo-list">
-          <li><img src="./images/logos/jquery.png"></li>
-          <li><img src="./images/logos/javascript.png"></li>
-          <li><img src="./images/logos/html5.png"></li>
-          <li><img src="./images/logos/css.png"></li>
-        </ul>
+        <i class="angle right icon large"></i>
+          <h3 class="ui header">Weather to Game</h3>
+        <div class="logo-list">
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <p> Weather to Game pulls from two separate APIs to let you know whether the weather is right for playing a board game. Afterwards,
+        it's even kind enough to suggest a game for you to play!</p>
+        <div class="project__links">
+            <a href="https://soundofsilence75.github.io/weather-to-game/" target="_blank">
+              <button class="ui button primary">
+                <i class="play icon"></i>
+                Live
+               </button>
+            </a>
+            <a href="https://github.com/soundofsilence75/weather-to-game" target="_blank">
+              <button class="ui button icon">
+                <i class="fab fa-github"></i>
+                Source
+              </button>
+            </a>
+          </div>
       </article>
     </section>
     <section class="ui container about">
-      <h2>About Me</h2>
-      <p>I'm a web developer and recent graduate of the Fullstack Development Career Path bootcamp at Thinkful. Coming from a game
+      <h2 class="ui header">About Me</h2>
+      <span>sections are hard to write</span>
+      <p class="margin-top">I'm a web developer and recent graduate of the Fullstack Development Career Path bootcamp at Thinkful. Coming from a game
       design background, creating apps that delight users is one of my favorite things to do. I embrace the challenge of learning
-      new libraries and frameworks, although React currently holds my heart in its warm, component-based hands. To recharge my
-      coding batteries, I like to practice brazilian jiujitsu, play/design (board) games, travel the world, play with my cat, and
-      make lists of my interests.</p>
+      new libraries and frameworks, although React currently holds my heart in its warm, component-based hands.</p>
+      <p>To recharge my coding batteries, I like to practice brazilian jiujitsu, play/design (board) games, travel the world, play
+      with my cat, and make lists of my interests.</p>
     </section>
     <section class="ui container contact">
-      <h2>Contact</h2>
-      <p>
+      <span>Hey, I just met you but</span>
+      <h2 class="ui header">Contact</h2>
+      <span>me maybe?</span>
+      <p class="margin-top">
         Interested in working with me? I'm currently looking for new challenges and opportunities. Get in touch
-        via <a href="mailto:baron.roy@gmail.com?Subject=Hello%20Roy" target="_blank">baron.roy@gmail.com</a> or
+        via <a href="mailto:baron.roy@gmail.com" target="_blank">baron.roy@gmail.com</a> or
         <a href="https://www.linkedin.com/in/roybarondeveloper/" target="_blank">LinkedIn</a>.
       </p>
     </section>
   </main>
   <footer role="contentinfo">
-    <p>Made with ';..;' by Roy Baron</p>
+    <div class="footer__links">
+      <span>Roy Baron</span>
+      <a href="mailto:baron.roy@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+      <a href="mailto:baron.roy@gmail.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
+  <script src="./scripts/carousel.js"></script>
+  <script src="./scripts/nav.js"></script>
 </body>
 </html>
