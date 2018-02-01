@@ -6,7 +6,7 @@ const Nav = {
   reset: function() {
     if (!this.listenersStarted) {
       this.startListeners();
-      console.log("Nothing to see here.");
+      console.log("These aren't the console logs you're looking for.");
     }
   },
 
