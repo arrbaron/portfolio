@@ -52,6 +52,16 @@ section {
   padding: 10px;
 }
 
+article {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+article:not(:last-of-type) {
+  border-bottom: 3px solid ghostwhite;
+  padding-bottom: 20px;
+}
+
 section p {
   text-align: left;
 }
@@ -120,23 +130,6 @@ footer span {
 
 .hidden {
   display: none;
-}
-
-i.angle {
-  position: absolute;
-  top: 30%;
-}
-
-i.angle:hover {
-  cursor: pointer;
-}
-
-i.angle.left {
-  left: 0;
-}
-
-i.angle.right {
-  right: 0;
 }
 
 .project__links {
