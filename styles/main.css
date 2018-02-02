@@ -15,7 +15,6 @@ main {
 
 nav {
   background-color: grey;
-  text-align: right;
   width: 100%;
 }
 
@@ -72,7 +71,6 @@ section p {
 
 .project {
   position: relative;
-  /* background-color: grey; */
 }
 
 .projects p:nth-of-type(1) {
@@ -87,6 +85,7 @@ nav.ui.segment {
   margin-top: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+  justify-content: flex-end;
 }
 
 .logo-list * {
@@ -200,15 +199,35 @@ header .ui.container.about {
     border-left: 3px solid ghostwhite;
     border-right: 3px solid ghostwhite;
     position: relative;
+    height: 500px;
   }
 
   .project__links {
-    position: relative;
+    position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   nav.ui.segment {
     margin-bottom: 30px;
+    display: flex;
+  }
+
+  nav.ui.segment a:nth-of-type(1) {
+    order: 1;
+  }
+
+  nav.ui.segment a:nth-of-type(2) {
+    order: 3;
+  }
+
+  nav.ui.segment a:nth-of-type(3) {
+    order: 2;
+  }
+
+  nav.ui.segment a:nth-of-type(4) {
+    order: 4;
   }
 
   section.ui.container.contact {
@@ -217,6 +236,12 @@ header .ui.container.about {
 
   article:first-of-type {
     border: none;
+  }
+
+  nav.ui.segment a:first-of-type {
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 
   article:nth-of-type(2) {
