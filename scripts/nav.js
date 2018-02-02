@@ -19,8 +19,14 @@ const Nav = {
     });
 
     $(".link--about").click(() => {
+      let about = $(".about.bottom");
+
+      if ($(".about.bottom").css("display") === "none") {
+        about = $(".about.top");
+      }
+
       $('html, body').animate({
-        scrollTop: ($(".about").offset().top)
+        scrollTop: (about.offset().top)
       }, this.scrollSpeed);
       $(".about__title").transition({animation: "flash", duration: this.animationTime});
     });
