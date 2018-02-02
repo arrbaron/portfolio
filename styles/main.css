@@ -177,7 +177,7 @@ header .ui.container.about {
   display: none;
 }
 
-@media screen and (min-width: 800px) {  
+@media screen and (min-width: 720px) {  
   header .fluid.bordered.image {
     width: 50%;
     height: 50%;
