@@ -1,0 +1,25 @@
+@media screen and (min-width: 800px) {
+  .grid {
+    display: grid;
+  }
+
+  .grid--halves {
+    grid-template-columns: 40% 60%;
+  }
+
+  .grid--thirds {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid article:first-of-type {
+    order: 2;
+  }
+
+  .grid article:nth-of-type(2) {
+    order: 1;
+  }
+
+  .grid article:nth-of-type(3) {
+    order: 3;
+  }
+}

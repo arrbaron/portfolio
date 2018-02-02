@@ -9,6 +9,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="./styles/grid.css">
   <link rel="stylesheet" type="text/css" href="./styles/main.css">
   <title>Roy Baron</title>
 </head>
@@ -23,102 +24,118 @@
   </nav>
   <header class="ui container" role="banner">
     <h1 class="ui header">Hello there! I'm a fullstack developer named Roy Baron. This is my portfolio. Let me show you around.</h1>
+    <div class="grid grid--halves">
     <section>
       <img class="ui fluid bordered image" src="./images/me/elephant.png">
       <aside>
-        <p class="ui pointing above label">This is me and an elephant (the elephant is a metaphor for coding).</p>
+        <p class="ui pointing above label">This is me and an elephant (the elephant is a metaphor for coding)</p>
       </aside>
-    </section>
-  </header>
-  <main role="main">
-    <section class="ui container projects">
-      <span>Here are some of my</span>
-      <h2 class="projects__title ui header">Projects</h2>
-      <article class="project hangmanateach">
-        <img class="project__image" src="./images/projects/hangmanateach.png">
-        <h3 class="ui header">Hangmanateach</h3>
-        <div class="logo-list">
-          <i class="fab fa-react"></i>
-          <img src="./images/logos/redux.png">
-          <i class="fab fa-node-js"></i>
-          <i class="fab fa-js-square"></i>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-        </div>
-        <p>
-          Hangmanateach is a vocab studying tool for both learners and educators. Create your own study sets, test spelling in a fun
-          and familiar format, and get quizzed on meaning. Also, manatees!
-        </p>
-         <div class="project__links">
-          <a href="https://hangmanatee.netlify.com/" target="_blank">
-            <button class="ui button primary">
-              <i class="play icon"></i>
-              Live
-            </button>
-          </a>
-          <a href="https://github.com/soundofsilence75/hangmanatee-client" target="_blank">
-            <button class="ui button icon">
-              <i class="fab fa-github"></i>
-              Source
-            </button>
-          </a>
-        </div>
-      </article>
-      <article class="project fridge-poetry">
-        <img class="project__image" src="./images/projects/fridge-poetry.png">
-        <h3 class="ui header">Fridge Poetry</h3>
-        <div class="logo-list">
-          <i class="fab fa-node-js"></i>
-          <i class="fab fa-js-square"></i>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-        </div>
-        <p>Fridge Poetry lets users build poems together with strangers on the internet. With magnets!</p>
-          <div class="project__links">
-            <a href="https://nameless-plateau-59215.herokuapp.com/" target="_blank">
-              <button class="ui button primary">
-                <i class="play icon"></i>
-                Live
-               </button>
-            </a>
-            <a href="https://github.com/soundofsilence75/fridge-poetry" target="_blank">
-              <button class="ui button icon">
-                <i class="fab fa-github"></i>
-                Source
-              </button>
-            </a>
-          </div>
-      </article>
-      <article class="project weather-to-game">
-        <img class="project__image" src="./images/projects/weather-to-game.png">
-          <h3 class="ui header">Weather to Game</h3>
-        <div class="logo-list">
-          <i class="fab fa-js-square"></i>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-        </div>
-        <p> Weather to Game pulls from two separate APIs to let you know whether the weather is right for playing a board game. Afterwards,
-        it's even kind enough to suggest a game for you to play!</p>
-        <div class="project__links">
-            <a href="https://soundofsilence75.github.io/weather-to-game/" target="_blank">
-              <button class="ui button primary">
-                <i class="play icon"></i>
-                Live
-               </button>
-            </a>
-            <a href="https://github.com/soundofsilence75/weather-to-game" target="_blank">
-              <button class="ui button icon">
-                <i class="fab fa-github"></i>
-                Source
-              </button>
-            </a>
-          </div>
-      </article>
     </section>
     <section class="ui container about">
       <h2 class="about__title ui header">About</h2>
       <span>sections are hard to write</span>
-      <p class="margin-top">I'm a web developer and recent graduate of the Fullstack Development Career Path bootcamp at Thinkful. Coming from a game
+      <p class="margin-top">I'm a fullstack web developer and recent graduate of the Fullstack Development Career Path bootcamp at Thinkful. Coming from a game
+      design background, creating apps that delight users is one of my favorite things to do. I embrace the challenge of learning
+      new libraries and frameworks, although React currently holds my heart in its warm, component-based hands.</p>
+      <p>To recharge my coding batteries, I like to practice brazilian jiujitsu, play/design (board) games, travel the world, play
+      with my cat, and make lists of my interests.</p>
+    </section>
+    </div>
+  </header>
+  <main role="main">
+    </div>
+    <section class="ui container projects">
+      <span>Here are some of my</span>
+      <h2 class="projects__title ui header">Projects</h2>
+      <div class="grid grid--thirds">
+        <article class="project hangmanateach">
+          <img class="project__image" src="./images/projects/hangmanateach.png">
+          <h3 class="ui header">Hangmanateach</h3>
+          <div class="logo-list">
+            <i class="fab fa-react"></i>
+            <img class="redux" src="./images/logos/redux.png">
+            <i class="fab fa-node-js"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <p>
+            Hangmanateach is a fullstack vocab studying app for both learners and educators. Create your own study sets, test spelling in a fun
+            and familiar format, and get quizzed on meaning. Also, manatees!
+          </p>
+          <div class="project__links">
+            <a href="https://hangmanatee.netlify.com/" target="_blank">
+              <button class="ui button primary">
+                <i class="play icon"></i>
+                Live
+              </button>
+            </a>
+            <a href="https://github.com/soundofsilence75/hangmanatee-client" target="_blank">
+              <button class="ui button icon">
+                <i class="fab fa-github"></i>
+                Source
+              </button>
+            </a>
+          </div>
+        </article>
+        <article class="project fridge-poetry">
+          <img class="project__image" src="./images/projects/fridge-poetry.png">
+          <h3 class="ui header">Fridge Poetry</h3>
+          <div class="logo-list">
+            <i class="fab fa-node-js"></i>
+            <img src="./images/logos/jquery.png">
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <p>Fridge Poetry is a fullstack app that lets users build poems together with strangers on the internet. With magnets!</p>
+            <div class="project__links">
+              <a href="https://nameless-plateau-59215.herokuapp.com/" target="_blank">
+                <button class="ui button primary">
+                  <i class="play icon"></i>
+                  Live
+                </button>
+              </a>
+              <a href="https://github.com/soundofsilence75/fridge-poetry" target="_blank">
+                <button class="ui button icon">
+                  <i class="fab fa-github"></i>
+                  Source
+                </button>
+              </a>
+            </div>
+        </article>
+        <article class="project weather-to-game">
+          <img class="project__image" src="./images/projects/weather-to-game.png">
+            <h3 class="ui header">Weather to Game</h3>
+          <div class="logo-list">
+            <img src="./images/logos/jquery.png">
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <p> Weather to Game pulls from two separate APIs to let you know whether the weather is right for playing a board game. Afterwards,
+          it's even kind enough to suggest a game for you to play!</p>
+          <div class="project__links">
+              <a href="https://soundofsilence75.github.io/weather-to-game/" target="_blank">
+                <button class="ui button primary">
+                  <i class="play icon"></i>
+                  Live
+                </button>
+              </a>
+              <a href="https://github.com/soundofsilence75/weather-to-game" target="_blank">
+                <button class="ui button icon">
+                  <i class="fab fa-github"></i>
+                  Source
+                </button>
+              </a>
+            </div>
+        </article>
+      </div> <!-- end of grid -->
+    </section>
+    <section class="ui container about bottom">
+      <h2 class="about__title ui header">About</h2>
+      <span>sections are hard to write</span>
+      <p class="margin-top">I'm a fullstack web developer and recent graduate of the Fullstack Development Career Path bootcamp at Thinkful. Coming from a game
       design background, creating apps that delight users is one of my favorite things to do. I embrace the challenge of learning
       new libraries and frameworks, although React currently holds my heart in its warm, component-based hands.</p>
       <p>To recharge my coding batteries, I like to practice brazilian jiujitsu, play/design (board) games, travel the world, play
@@ -128,9 +145,8 @@
       <span>Hey, I just met you but</span>
       <h2 class="contact__title ui header">Contact</h2>
       <span>me maybe?</span>
-      <p class="margin-top">
-        Interested in working with me? I'm currently looking for new challenges and opportunities. Get in touch
-        via <a href="mailto:baron.roy@gmail.com" target="_blank">baron.roy@gmail.com</a> or
+      <p class="margin-top">Interested in working with me? I'm currently looking for new challenges and opportunities.</p>
+      <p>Get in touch via <a href="mailto:baron.roy@gmail.com" target="_blank">baron.roy@gmail.com</a> or
         <a href="https://www.linkedin.com/in/roybarondeveloper/" target="_blank">LinkedIn</a>.
       </p>
     </section>
