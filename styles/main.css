@@ -102,7 +102,7 @@ nav.ui.segment {
 
 footer {
   margin-top: 20px;
-  background-color: #e0e1e2;
+  background-color: #1b1c1d;
 }
 
 .footer__links * {
@@ -113,6 +113,7 @@ footer {
 footer span {
   margin-bottom: 0;
   font-size: 1.2em;
+  color: rgba(255,255,255,.7);
 }
 
 .footer__copyright  {
@@ -123,12 +124,13 @@ footer span {
 .fa-copyright {
   width: 20px;
   height: 20px;
+  color: rgba(255,255,255,.7);
 }
 
 .fa-envelope-square, .fa-linkedin{
   width: 30px !important;
   height: 30px !important;
-  color: black;
+  color: rgba(255,255,255,.7);
 }
 
 .hidden {
