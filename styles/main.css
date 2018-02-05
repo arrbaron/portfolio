@@ -3,6 +3,7 @@
 }
 
 body {
+  background-image: url("../images/backgrounds/dust.png");
   font-family: 'PT Sans', sans-serif;
   text-align: center;
 }
@@ -195,11 +196,13 @@ header .ui.container.about {
   section {
     margin-top: 50px;
     margin-bottom: 50px;
+    border: none;
   }
 
   article {
-    border-left: 3px solid ghostwhite;
-    border-right: 3px solid ghostwhite;
+    /* border-left: 3px solid ghostwhite;
+    border-right: 3px solid ghostwhite; */
+    /* border: none; */
     position: relative;
     height: 500px;
   }
@@ -242,8 +245,7 @@ header .ui.container.about {
 
   nav.ui.segment a:first-of-type {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 10px;
   }
 
   article:nth-of-type(2) {
