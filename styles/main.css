@@ -198,8 +198,12 @@ header .ui.container.about {
   }
 
   section {
-    margin-top: 250px;
+    margin-top: 150px;
     border: none;
+  }
+
+  header section {
+    /* margin-top: 100px; */
   }
 
   article {
